@@ -11,7 +11,7 @@ para o mesmo elemento.
 2. Especifidade
 3. Importancia
 
-### Imortancia do Estilo
+### Importancia do Estilo
 
 inline > tag style > tag link
 
@@ -19,3 +19,15 @@ inline > tag style > tag link
 
 é um calculo metamatico, onde, cada tipo de seletor e origem do estilo
 possuem valores a serem considerados.
+
+0. Universal selsctor, combinators e negation pseudo-class (not)
+1. Element type selector e pseudo-elents(::before, ::after)
+10. Classes e atribute selector (type="radio")
+100. ID selector
+1000. Inline
+
+### A regra !important
+
+* cuidado, evito o uso
+* não é consoderado uma boa prática
+* quebra o fluxo natural da cascata
