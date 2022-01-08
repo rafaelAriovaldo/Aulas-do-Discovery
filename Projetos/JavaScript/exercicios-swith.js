@@ -1,9 +1,9 @@
-var n = 0;
-switch(n){
-case n > 90:
+function note ( noteA, noteB, noteC, noteD, noteF)
+let result;
+switch(notaA){
+case 'A':
+    result = notaA >= 90
     console.log("irineu vc não nem eu")
     break;
-case n < 90:
-    console.log("to entendo a logica")    
-
 }
+console.log(note.result(85))
