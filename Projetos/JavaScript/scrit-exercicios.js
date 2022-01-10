@@ -49,3 +49,7 @@ if (n < 0) {
 return n;
 }
 getn(89)
+getn(86)
+getn(78)
+getn(5)
+getn(-1)
