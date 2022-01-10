@@ -1,5 +1,7 @@
-var n = 105;
+let n;
 
+function getn(n){
+    
 if (n >= 90 && n <= 100) {
     console.log("Note A.")
     console.log(n +".")
@@ -44,3 +46,6 @@ if (n < 0) {
 } else {
     
 }
+return n;
+}
+getn(89)
