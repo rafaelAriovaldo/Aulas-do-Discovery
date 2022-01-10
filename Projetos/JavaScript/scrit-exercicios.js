@@ -1,6 +1,6 @@
 var n = 60;
 
-if (n >= 90 && n >= 100) {
+if (n >= 90 && n <= 100) {
     console.log("Note A")
 } else {
     //console.log("erro de condição")
