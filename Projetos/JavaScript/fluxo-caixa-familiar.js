@@ -26,6 +26,7 @@ if (saldoFinal > 0) {
     console.log("saldo negativo")
     console.log("R$:" + saldoFinal)
 }
+return saldoFinal;
 }
 getSaldo()
 // Fazer soma em arrays.
