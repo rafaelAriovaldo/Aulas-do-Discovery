@@ -1,5 +1,3 @@
-
-let number2 = 0
 function getTable(number2) {
     let number1 = 0
     while (number1 < 10) {
@@ -15,8 +13,5 @@ function getTable(number2) {
     return number2;
 
 }
-
-
-getTable(9);
-getTable(5);
-getTable(8);
+getTable(5)
+getTable(4)
