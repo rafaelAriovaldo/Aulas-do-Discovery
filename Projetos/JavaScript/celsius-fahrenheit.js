@@ -1,20 +1,18 @@
 
 
 
-function conversion(F) {
+function conversion(n, C, F, ) {
 
-    let C = "celsius";
-    let c = (F - 32) * 5/9
+    C = "celsius";
+    
+    let c = (n - 32) * 5 / 9
     console.log(c + " " + C + ".")
-    return F;
-}   
-
-function conversion1(C){
-    let F = "fahenheit"
-    let f = C * 9/5 + 32
+    
+    F = "fahenheit"
+    let f = n * 9 / 5 + 32
     console.log(f + " " + F + ".")
-    return C;
+    return n;
+    
 }
-
 
 conversion(50)
