@@ -36,3 +36,38 @@ const booksByCategory = [
 
 ];
 
+const booksCategories = booksByCategory.length
+console.log(booksCategories);
+for (let category of booksCategories) {
+    console.log('total de livrios da categoria:', category.category)
+    console.log(category.books.length)
+}
+function Contauthors() {
+    let authors = [];
+    for (let category of booksCategories) {
+        for (let book of category.books) {
+            if (authors.indexOf(book.author) == -1) {
+                authors.push(book.author)
+            }
+        }
+    }
+    console.log("Total de autores: ", authors.length)
+}
+
+function booksOfAustoCry() {
+    let books = [];
+    for (let category of booksCategories) {
+        for (let book of category.books) {
+          if(book.author === 'Augusto Cury'){
+            book.push(book.title)
+          }
+        }
+    }
+    console.log(`Livros do Autor ${author} : ${books.join(", ")}`)
+    {
+
+    }
+}
+booksOfAustoCry('Augusto Cury')
+
+// falta revisão 
