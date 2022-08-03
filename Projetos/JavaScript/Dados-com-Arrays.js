@@ -1,7 +1,7 @@
 const booksByCategory = [
     {
-        category = "Riqueza",
-        books =[{
+        category : "Riqueza",
+        books : [{
             title: "Os segredos da mente milionaria",
             author: "T.Harv Eker",
         },
@@ -20,11 +20,11 @@ const booksByCategory = [
         category: "Inteleigencia emocional",
         books: [{
             title: "Você é insubistuível",
-            author: "Agusto Cury",
+            author: "August Cury",
         },
         {
             title: "Ansiedade - Como enfrentar o mal do Século",
-            author: "August Cury"
+            author: "August Cury",
         },
         {
             title: "Os 7 habitos das pessoas altamente eficases",
@@ -36,38 +36,47 @@ const booksByCategory = [
 
 ];
 
-const booksCategories = booksByCategory.length
-console.log(booksCategories);
-for (let category of booksCategories) {
+const booksCategories = booksByCategory.length;
+console.log('Total de categorias:',booksCategories);
+for (let category of booksByCategory) {
+    
     console.log('total de livrios da categoria:', category.category)
+    
     console.log(category.books.length)
+    
+    
+    
 }
+
 function Contauthors() {
     let authors = [];
-    for (let category of booksCategories) {
+    for (let category of booksByCategory) {
         for (let book of category.books) {
             if (authors.indexOf(book.author) == -1) {
                 authors.push(book.author)
+                
             }
         }
     }
     console.log("Total de autores: ", authors.length)
+   
 }
+Contauthors();
 
-function booksOfAustoCry() {
+function booksOfautors(author) {
     let books = [];
-    for (let category of booksCategories) {
+    for (let category of booksByCategory) {
         for (let book of category.books) {
-          if(book.author === 'Augusto Cury'){
-            book.push(book.title)
+          if(book.author === author){
+            books.push(book.title)
           }
         }
     }
     console.log(`Livros do Autor ${author} : ${books.join(", ")}`)
-    {
+    
 
-    }
+    
 }
-booksOfAustoCry('Augusto Cury')
+booksOfautors('August Cury');
 
-// falta revisão 
+// Revisado !!! EEE
