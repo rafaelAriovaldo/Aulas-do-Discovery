@@ -42,7 +42,7 @@ function getn(n) {
 
     }
     if (n < 0) {
-        console.log("nota invalida.")
+        console.log("nota invalida.") git config--global user.email
     } else {
 
     }
