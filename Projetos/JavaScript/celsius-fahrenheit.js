@@ -22,7 +22,7 @@ function getTempera(temp) {
 try {
     console.log(getTempera('50C'))
     console.log(getTempera('50F'))
-    console.log(getTempera('50Z'))
+  //console.log(getTempera('50Z'))
 } catch (error) {
     console.log(error.message)
 }
