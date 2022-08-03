@@ -1,6 +1,6 @@
 let familia = {
-    receitas: [2500, 3200, 250.43, 360.45],
-    despesas: [320.34, 128.45, 176.87, 1450.00],
+    receitas: [0, 0, 0, 0],
+    despesas: [0, 0, 0, 0],
 }
 
 function soma(array) {
@@ -23,6 +23,9 @@ function saldoFamiliar() {
      balanceText = "Positivo"
     } else {
         balanceText ="Negativo"
+    }
+    if(itOk === 0){
+        balanceText = "Conta vazia"
     }
     
     console.log(`Seu saldo é:${balanceText}.
